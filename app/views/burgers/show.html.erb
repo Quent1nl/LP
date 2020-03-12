@@ -37,7 +37,6 @@
   </thead>
 
   <tbody>
-    <table class="tableau">
     <% @burger.nutriments.each do |burger| %>
       <tr>
       <td><%= burger[0] %></td> <%# Product nutriment title %>
@@ -45,7 +44,6 @@
       </tr>
     <% end %>
   </tbody>
-  </table>
 </table>
 
 <%= link_to 'Edit', edit_burger_path(@burger) %> |
