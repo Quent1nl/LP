@@ -37,16 +37,16 @@
   </thead>
 
   <tbody>
-  <table class="tableau">
-      <% @burger.nutriments.each do |burger| %>
-        <tr>
-        <td><%= burger[0] %></td> <%# Product nutriment title %>
-        <td><%= burger[1] %></td> <%# Product nutriment value %>
-        </tr>
-      <% end %>
-    </table>
+    <table class="tableau">
+    <% @burger.nutriments.each do |burger| %>
+      <tr>
+      <td><%= burger[0] %></td> <%# Product nutriment title %>
+      <td><%= burger[1] %></td> <%# Product nutriment value %>
+      </tr>
+    <% end %>
   </tbody>
-
+  </table>
+</table>
 
 <%= link_to 'Edit', edit_burger_path(@burger) %> |
 <%= link_to 'Back', burgers_path %>
